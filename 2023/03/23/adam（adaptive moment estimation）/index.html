@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="介绍Adam（Adaptive Moment Estimation）算法是一种优化算法，用于梯度下降过程中的参数更新，特别是在深度学习模型中广泛使用。 Adam算法是基于梯度下降算法的变体，结合了动量梯度下降和RMSProp算法的优点，旨在通过自适应调整学习率和动量，加速训练并获得更好的结果。 具体而言，Adam算法通过计算每个参数的指数移动平均值和平方梯度的指数移动平均值来更新参数。它包含以下步">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/03/23/adam%EF%BC%88adaptive%20moment%20estimation%EF%BC%89/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="介绍Adam（Adaptive Moment Estimation）算法是一种优化算法，用于梯度下降过程中的参数更新，特别是在深度学习模型中广泛使用。 Adam算法是基于梯度下降算法的变体，结合了动量梯度下降和RMSProp算法的优点，旨在通过自适应调整学习率和动量，加速训练并获得更好的结果。 具体而言，Adam算法通过计算每个参数的指数移动平均值和平方梯度的指数移动平均值来更新参数。它包含以下步">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-23T05:48:30.839Z">
+<meta property="article:modified_time" content="2023-03-22T12:47:27.841Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-adam（adaptive moment estimation）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/03/23/adam%EF%BC%88adaptive%20moment%20estimation%EF%BC%89/" class="article-date">
+  <time class="dt-published" datetime="2023-03-23T05:48:30.839Z" itemprop="datePublished">2023-03-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Adam（Adaptive Moment Estimation）算法是一种优化算法，用于梯度下降过程中的参数更新，特别是在深度学习模型中广泛使用。</p>
+<p>Adam算法是基于梯度下降算法的变体，结合了动量梯度下降和RMSProp算法的优点，旨在通过自适应调整学习率和动量，加速训练并获得更好的结果。</p>
+<p>具体而言，Adam算法通过计算<strong>每个参数的指数移动平均值</strong>和<strong>平方梯度的指数移动平均值</strong>来更新参数。它包含以下步骤：</p>
+<ol>
+<li>初始化参数：设置学习率、动量参数和平方梯度的指数移动平均参数。</li>
+<li>计算梯度：计算当前参数的梯度。</li>
+<li>计算动量：计算动量向量，考虑当前梯度和上一次动量向量。</li>
+<li>计算平方梯度的指数移动平均值：计算当前参数的平方梯度，使用指数移动平均来计算平方梯度的指数移动平均值。</li>
+<li>更新参数：使用动量和平方梯度的指数移动平均值来更新参数。</li>
+<li>重复步骤2-5，直到达到最大迭代次数或收敛。</li>
+</ol>
+<p>Adam算法有许多超参数可以调整，如学习率、动量参数和平方梯度的指数移动平均参数等。通常情况下，可以使用默认值或根据经验进行调整。</p>
+<p>Adam算法在深度学习中表现出色，具有较快的收敛速度和较好的泛化性能。然而，它并不适用于所有类型的问题，可能需要根据具体问题进行优化算法选择。</p>
+<h1 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h1><p><code>RMSProp</code>（Root Mean Square Propagation）算法和动量梯度下降（Momentum Gradient Descent）是两种常用的梯度下降算法，它们分别在Adam算法中被用到。</p>
+<ol>
+<li><code>RMSProp</code>算法</li>
+</ol>
+<p><code>RMSProp</code>算法主要用于解决梯度下降算法中学习率的问题，它的核心思想是自适应地调整每个参数的学习率。具体而言，<code>RMSProp</code>算法计算每个参数的平方梯度的指数移动平均值，然后将学习率除以该指数移动平均值的平方根，从而使<strong>每个参数的学习率根据其梯度的大小进行自适应调整</strong>。(参数移动越大，学习率越小)</p>
+<p><code>RMSProp</code>算法可以避免学习率在训练期间过于波动，以及过度更新导致的问题，使得梯度下降算法更加稳定。</p>
+<ol>
+<li>动量梯度下降</li>
+</ol>
+<p>动量梯度下降算法是一种优化算法，旨在加速模型的训练过程，并且可以帮助算法避免陷入局部最优解。动量梯度下降算法通过引入动量（momentum）的概念，来模拟物理学中物体的惯性，使得梯度下降算法可以更快地收敛，并减少训练期间的震荡。</p>
+<p>具体而言，动量梯度下降算法将梯度的更新分为两个部分：一个是当前梯度的贡献，另一个是历史梯度的贡献，历史梯度的贡献是通过引入动量参数来实现的，该参数表示历史梯度在更新中的权重。</p>
+<p>动量梯度下降算法可以帮助算法跳出局部最优解，同时也可以减少梯度下降算法在平坦区域的震荡，从而加速模型训练过程。</p>
+<p>总之，<code>RMSProp</code>算法和动量梯度下降算法都是常用的优化算法，它们可以帮助算法在训练期间更加稳定和快速地收敛。在深度学习中，这两个算法通常被用于Adam算法中，以提高算法的效率和性能。</p>
+<h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>Adam算法在深度学习中表现优异，但并不适用于所有类型的问题。以下是一些可能不适合使用Adam算法的情况：</p>
+<ol>
+<li>数据集较小：当训练数据集很小或具有噪声时，Adam算法可能会在噪声中迷失方向，导致模型性能下降。</li>
+<li>学习率较高：当学习率设置过高时，Adam算法可能会导致参数更新过于频繁，使得模型在训练期间发生震荡和不稳定。</li>
+<li>非凸优化问题：在非凸优化问题中，Adam算法可能会在局部最小值处陷入困境，而无法找到全局最小值。</li>
+</ol>
+<p>对于这些问题，可以考虑使用其他优化算法来解决，例如：</p>
+<ol>
+<li>数据集较小：可以使用随机梯度下降（Stochastic Gradient Descent，SGD）算法，通过在每个批次上进行梯度下降来避免过拟合。</li>
+<li>学习率较高：可以使用<code>Adagrad</code>算法，它可以自适应地调整每个参数的学习率，避免过度更新。</li>
+<li>非凸优化问题：可以使用L-BFGS算法等二阶优化算法，以快速找到全局最小值。</li>
+</ol>
+<p>总之，选择优化算法应该考虑具体问题和数据集的特征，并根据实验结果进行调整和优化。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/03/23/adam%EF%BC%88adaptive%20moment%20estimation%EF%BC%89/" data-id="clfkp0jez0000vova6ixu0k92" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/03/23/%E5%88%86%E7%B1%BB%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/03/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/03/23/%E5%88%86%E7%B1%BB%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/23/adam%EF%BC%88adaptive%20moment%20estimation%EF%BC%89/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
