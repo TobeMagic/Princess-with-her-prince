@@ -1,0 +1,61 @@
+name: Aggregate plugin center review notes
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: read
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build shared notes.json
+        env:
+          GH_TOKEN: ${ github.token }
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, pathlib
+          repo = os.environ["GITHUB_REPOSITORY"]
+          label = "plugin-center-skill-mcp-review"
+          anchor = 3
+          out = pathlib.Path("plugin-center-skill-mcp-review/2026-11-25/notes.json")
+          issues = json.loads(subprocess.check_output([
+              "gh", "api", f"repos/{repo}/issues?labels={label}&state=all&per_page=100",
+              "--jq", "[.[] | {number, title, body, html_url, created_at, updated_at}]"
+          ], text=True))
+          records = []
+          for issue in issues:
+              if issue.get("number") == anchor:
+                  continue
+              body = (issue.get("body") or "").strip()
+              start = body.find('{"name"')
+              if start < 0:
+                  continue
+              try:
+                  value = json.loads(body[start:])
+              except Exception:
+                  continue
+              notes = value.get("notes")
+              if not isinstance(notes, dict):
+                  continue
+              records.append({
+                  "name": str(value.get("name") or "未署名评审人"),
+                  "time": str(value.get("time") or issue.get("updated_at") or ""),
+                  "notes": {str(k): str(v) for k, v in notes.items() if str(v).strip()},
+                  "issue": issue.get("html_url"),
+                  "number": issue.get("number")
+              })
+          records.sort(key=lambda x: x["time"])
+          out.parent.mkdir(parents=True, exist_ok=True)
+          out.write_text(json.dumps({"records": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"wrote {len(records)} records")
+          PY
+          if ! git diff --quiet -- plugin-center-skill-mcp-review/2026-11-25/notes.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add plugin-center-skill-mcp-review/2026-11-25/notes.json
+            git commit -m "Aggregate shared plugin center review notes"
+            git push
+          fi
