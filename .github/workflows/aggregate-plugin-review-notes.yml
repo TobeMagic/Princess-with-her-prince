@@ -22,7 +22,7 @@ jobs:
           anchor = 3
           out = pathlib.Path("plugin-center-skill-mcp-review/2026-11-25/notes.json")
           issues = json.loads(subprocess.check_output([
-              "gh", "api", f"repos/{repo}/issues?labels={label}&state=all&per_page=100",
+              "gh", "api", f"repos/{repo}/issues?labels={label}&state=open&per_page=100",
               "--jq", "[.[] | {number, title, body, html_url, created_at, updated_at}]"
           ], text=True))
           records = []
