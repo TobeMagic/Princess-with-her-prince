@@ -181,122 +181,21 @@
 
     <div class="eyebrow">Luckee · Main Agent Analysis</div>
     <h1>dev / main 主 Agent 技能 & MCP 清单对比与覆盖审计</h1>
-    <p class="lead">对比 dev 插件包运行时与 main 宿主注入清单，梳理 140 个评测 case 覆盖现状，并给出预期的补齐方案。</p>
-
-    <!-- Section 1 -->
+    <p class="lead">对比 dev 插件包运行时与 main 宿主注入清单，梳理 140 个评测 case 覆盖现状，并给出预期的补齐方案。</p>    <!-- Section 1 -->
     <section class="section">
-      <h2>1. dev 与 main 主 Agent 技能 & MCP 清单区别</h2>
-      
-      <h3>1.1 技能 (Skills) 清单与加载架构区别</h3>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>对比维度</th>
-              <th>dev 插件中心运行时 (6466)</th>
-              <th>main 宿主物化 (6266)</th>
-              <th>架构/数据隔离影响</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>加载机制</b></td>
-              <td>Codex 官方插件运行时开启，只加载所需技能</td>
-              <td>宿主在 worker 启动时强制同步物化 Builtin</td>
-              <td>dev 走标准插件加载逻辑，main 走硬编码刷新</td>
-            </tr>
-            <tr>
-              <td><b>Builtin 清单</b></td>
-              <td>19 个 Builtin 技能，直接由插件包提供，不注入 prompt</td>
-              <td>19 个 Builtin 技能，硬编码刷新到 agent 技能目录</td>
-              <td>dev 自带 <code>html-to-pdf</code>、<code>luckee-plugin-smoke</code> 等专属包</td>
-            </tr>
-            <tr>
-              <td><b>数据隔离</b></td>
-              <td>按 <code>userId</code>、已添加、非 ClawHub、target=main 软链过滤</td>
-              <td>全局共享 <code>CODEX_HOME/skills</code> 物理目录，无多用户隔离</td>
-              <td>dev 实现了运行时过滤；main 容易因目录共用产生泄漏</td>
-            </tr>
-            <tr>
-              <td><b>本地 stashing</b></td>
-              <td>开启时将原 <code>skills</code> 重命名为 <code>skills_old</code> 并留空</td>
-              <td>不对原 <code>skills</code> 做任何移动或备份操作</td>
-              <td>dev 避开了工作区历史遗留技能对新过滤视图的干扰</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h2>1. dev 与 main 清单区别</h2>
 
-      <h3>1.2 MCP Server 清单与鉴权区别</h3>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>MCP Server Name</th>
-              <th>dev 官方插件包 (9 个)</th>
-              <th>main 宿主注入</th>
-              <th>说明 & 安全边界</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>display-files</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 通过 node-mjs 命令启动</td>
-              <td><span class="badge no-badge">无</span> — 依赖宿主通用文件工具</td>
-              <td>文件预览与文本解析辅助工具</td>
-            </tr>
-            <tr>
-              <td><b>write-validated-json</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 通过 node-mjs 命令启动</td>
-              <td><span class="badge no-badge">无</span> — 依赖宿主通用写入工具</td>
-              <td>结构化数据落地校验工具</td>
-            </tr>
-            <tr>
-              <td><b>luckee_main_agent</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — loopback 加安全校验</td>
-              <td><span class="badge main-badge">宿主注入</span> — HTTP loopback 裸调用</td>
-              <td>dev 增加 <code>X-User-Token</code> 与存储的 <code>timingSafeEqual</code> 拦截</td>
-            </tr>
-            <tr>
-              <td><b>lingxing</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 通过 list_connections 发现</td>
-              <td><span class="badge no-badge">无</span> — 使用 <code>lingxing_main</code></td>
-              <td>dev 将多账号 server 归一为 <code>lingxing</code> 动态账号查数</td>
-            </tr>
-            <tr>
-              <td><b>amazon_ads_main</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 14 个只读工具</td>
-              <td><span class="badge main-badge">宿主注入</span> — 由 <code>mcp-extra.ts</code> 处理</td>
-              <td>主 Agent 广告只读视图；工作区 flag 关闭时由宿主注入</td>
-            </tr>
-            <tr>
-              <td><b>amazon-product</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 通过 <code>mcp-extra</code> 转换</td>
-              <td><span class="badge main-badge">宿主注入</span> — 直连网关 /luckee_mcp/...</td>
-              <td>主 Agent 读取 ASIN 详情核心工具</td>
-            </tr>
-            <tr>
-              <td><b>sellersprite-mcp</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 经 plugins path 挂载</td>
-              <td><span class="badge main-badge">宿主注入</span> — 经 <code>builtinMcpByName</code> 网关</td>
-              <td>卖家精灵选品与竞品数据</td>
-            </tr>
-            <tr>
-              <td><b>sorftime-mcp</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 经 plugins path 挂载</td>
-              <td><span class="badge main-badge">宿主注入</span> — 经 <code>builtinMcpByName</code> 网关</td>
-              <td>Sorftime 销量与促销历史</td>
-            </tr>
-            <tr>
-              <td><b>sif-mcp</b></td>
-              <td><span class="badge dev-badge">插件内置</span> — 经 plugins path 挂载</td>
-              <td><span class="badge main-badge">宿主注入</span> — 经 <code>builtinMcpByName</code> 网关</td>
-              <td>SIF 流量构成与广告词曝光</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h3>1.1 Skill 清单（逐项）</h3>
+      <div class="table-wrap"><table><thead><tr><th>#</th><th>Skill 条目</th><th>dev</th><th>main</th><th>差异</th><th>备注</th></tr></thead><tbody>
+<tr><td>1</td><td><code>html-to-pdf</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>dev 同时是插件自带项；main 为 builtin</td><td></td></tr><tr><td>2</td><td><code>amazon-category-analysis</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>3</td><td><code>amazon-competitor-compare-report</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>4</td><td><code>amazon-listing-visual-strategy-luckee</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>5</td><td><code>amazon-review-scraper</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>6</td><td><code>launch-listing-package-orchestrator</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>7</td><td><code>listing-diagnosis</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>8</td><td><code>listing-diagnosis-orchestrator</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>dev 有内容修改；main 为旧版</td><td></td></tr><tr><td>9</td><td><code>listing-optimization-orchestrator</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>10</td><td><code>listing-sandbox-analyzer</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>dev 有内容修改；main 为旧版</td><td></td></tr><tr><td>11</td><td><code>select-ad-keywords</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>12</td><td><code>selection-business-analysis-orchestrator</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>13</td><td><code>selection-competitor-search</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>14</td><td><code>selection-m1-market-trend</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>15</td><td><code>selection-m2-competition-structure</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>16</td><td><code>selection-m3-seller-logistics</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>17</td><td><code>selection-m5-new-product-survival</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>18</td><td><code>selection-m6-benchmark-teardown</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>19</td><td><code>violation-detection</code></td><td><span class="badge yes-badge">有</span></td><td><span class="badge yes-badge">有</span></td><td>两端均列入 Builtin 清单；加载来源不同</td><td></td></tr><tr><td>20</td><td><code>luckee-plugin-smoke</code></td><td><span class="badge yes-badge">有</span> — 插件自带</td><td><span class="badge no-badge">无</span></td><td>dev 专属插件自检技能</td><td></td></tr><tr><td>21</td><td>用户从插件中心添加的 catalog skills</td><td><span class="badge yes-badge">有</span> — 按 userId / target 过滤</td><td><span class="badge yes-badge">有</span> — 共享目录语义</td><td>dev 生成过滤视图；main 无用户隔离</td><td></td></tr>
+      </tbody></table></div>
+
+      <h3>1.2 MCP 清单（逐项）</h3>
+      <div class="table-wrap"><table><thead><tr><th>#</th><th>MCP 条目</th><th>dev</th><th>main</th><th>差异</th><th>备注</th></tr></thead><tbody>
+<tr><td>1</td><td><code>display-files</code></td><td>有 — 插件 MCP</td><td>无</td><td>dev 插件独有</td><td></td></tr><tr><td>2</td><td><code>write-validated-json</code></td><td>有 — 插件 MCP</td><td>无</td><td>dev 插件独有</td><td></td></tr><tr><td>3</td><td><code>luckee_main_agent</code></td><td>有 — 插件 MCP + X-User-Token 校验</td><td>有 — 宿主 loopback，无 Token 校验</td><td>dev 增加鉴权</td><td></td></tr><tr><td>4</td><td><code>lingxing</code></td><td>有 — 单一插件 MCP</td><td>无</td><td>dev 归一多账号；main 使用 lingxing_main</td><td></td></tr><tr><td>5</td><td><code>lingxing_main</code></td><td>插件开启时不注入；fallback 有</td><td>有 — 宿主 20 工具</td><td>main 常规注入</td><td></td></tr><tr><td>6</td><td><code>lingxing-official_<account></code></td><td>插件开启时不列独立 server</td><td>有 — official mode 每账号一个</td><td>动态账号 server</td><td></td></tr><tr><td>7</td><td><code>amazon_ads_main</code></td><td>有 — 插件 MCP</td><td>有 — 宿主 14 工具</td><td>两端都有，来源不同</td><td></td></tr><tr><td>8</td><td><code>amazon-product</code></td><td>有 — 插件 MCP</td><td>有 — 宿主 Motse HTTP</td><td>两端都有，来源不同</td><td></td></tr><tr><td>9</td><td><code>sellersprite-mcp</code></td><td>有 — 插件 MCP</td><td>有 — builtin gateway</td><td>两端都有，来源不同</td><td></td></tr><tr><td>10</td><td><code>sorftime-mcp</code></td><td>有 — 插件 MCP</td><td>有 — builtin gateway</td><td>两端都有，来源不同</td><td></td></tr><tr><td>11</td><td><code>sif-mcp</code></td><td>有 — 插件 MCP</td><td>有 — builtin gateway / 旧 SIF 配置</td><td>两端都有，来源不同</td><td></td></tr><tr><td>12</td><td><code>ads-strategy / tune-ads / xingshang</code></td><td>插件开启时不走宿主注入</td><td>有 — 基础注入链；official mode 过滤</td><td>workspace / 委派链路</td><td></td></tr><tr><td>13</td><td><code>用户自定义 MCP</code></td><td>有 — 重名时用户连接优先</td><td>有 — workspace / project MCP 叠加</td><td>重名覆盖规则不同</td><td></td></tr>
+      </tbody></table></div>
     </section>
+
 
     <!-- Section 2 -->
     <section class="section">
