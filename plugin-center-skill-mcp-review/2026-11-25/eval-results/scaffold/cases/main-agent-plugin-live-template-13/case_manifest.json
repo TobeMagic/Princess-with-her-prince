@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-13",
+  "title": "本周整体表现怎么样？",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:02:09.405Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:本周整体表现怎么样？"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "超过 5 分钟运行阈值仍无回复，按超时记录，不能判为通过。",
+  "source_case_id": "template-main-agent-weekly-business-review",
+  "source_result_id": "template-main-agent-weekly-business-review-result.json",
+  "short_reply": "",
+  "reply_length": 0,
+  "is_short_reply": true,
+  "terminal_status": "生成超时",
+  "terminal_state": "timeout",
+  "terminal_reason": "",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=067a1a76-20ce-4182-9c15-5172a25f6fe4",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-main-agent-weekly-business-review-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-main-agent-weekly-business-review-result.json",
+  "basic_conclusion": "超过 5 分钟运行阈值仍无回复，按超时记录，不能判为通过。"
+}

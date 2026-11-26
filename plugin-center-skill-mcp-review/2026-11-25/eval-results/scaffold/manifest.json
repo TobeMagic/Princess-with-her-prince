@@ -1,0 +1,1031 @@
+{
+  "generated_at": "2026-11-26T06:09:22Z",
+  "file_count": 205,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3469,
+      "sha256": "dd8cb6086673d7e40a25f97cc109261a054f17c6f1f7805eab5c7c684f1e3180"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-01/case_manifest.json",
+      "bytes": 2421,
+      "sha256": "bf12a7d432ac4f001052d27724d0c33572f02012329d44a81dc928449bc3b8ee"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-01/eval/checks.json",
+      "bytes": 872,
+      "sha256": "8aae299fbab16cfcaa56bfc707fbdf4bab7154af15eb129d54a290f32a16d25e"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-01/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "e2a484729eae86da764112a7a569b8ed448912a647ae0d3cef69bd45381db9ae"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-01/input/task.md",
+      "bytes": 172,
+      "sha256": "4a0f0295fb797667be5e2b24b79cf7c1feb3add3d53310fb57cd3255eb03c9a0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-02/case_manifest.json",
+      "bytes": 2463,
+      "sha256": "5d6f0d7bc42e718f2af21d164c4c561492558096f3429301a5eb78d23369321f"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-02/eval/checks.json",
+      "bytes": 853,
+      "sha256": "7d2cc09bd42a04853175f006ecffa3cbcfc29e581f65c523275eb0c1e1da7ac9"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-02/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "19c82535008e1b9f9727e383f2a8137af3db9920209e1593ab94092f9aa0e292"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-02/input/task.md",
+      "bytes": 247,
+      "sha256": "31831e91490a610bedb71838c6615002ad03fb722a537b74638b43b569240deb"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-03/case_manifest.json",
+      "bytes": 2401,
+      "sha256": "170dc4ac3fd9c859fdaa5968051be215f73adcf17c072da7e9364ec6d36857ee"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-03/eval/checks.json",
+      "bytes": 868,
+      "sha256": "5c20540e808096d99c0603ff7fb0a2fbfe7eb69d2957bd8fc3efa63148741b77"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-03/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "a66f08a9dca95a0e9649930abd0b30ff86e7cda5d3886a361ed76f5f038c4098"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-03/input/task.md",
+      "bytes": 209,
+      "sha256": "8bb46c5324146e975c299d8fa9abc281b8714a05e26e16c9e025eb8ed60572fe"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-04/case_manifest.json",
+      "bytes": 2390,
+      "sha256": "210131e67ea5168085e92e6e22bb0bbbf13a51b8c6262d4610f0746898fe4b00"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-04/eval/checks.json",
+      "bytes": 832,
+      "sha256": "d90f464f9dc59aa4c0804adbf117d2cdb81b86b67beaf1aa22f0135b0754c5d5"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-04/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "391c22615e227ce6888844bcb392fd441eedf3d2c8dfc6a7468bf417a2d551cc"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-04/input/task.md",
+      "bytes": 174,
+      "sha256": "83ef1df0959b4866a84fcde121d71181a035b9e7ab85adaffcd930160b38099f"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-05/case_manifest.json",
+      "bytes": 2477,
+      "sha256": "e4b7676042770a7c241a6fc9763820d69b4e8d49bc087b2902529b162a8509bc"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-05/eval/checks.json",
+      "bytes": 859,
+      "sha256": "737de0b4fa629c4b2cec03bb3393560a41d13db1f2e54504b26a885a5c4d855e"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-05/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "69f9354cee41ef97b8fc59993bbb11a17944d7a626ba4dde390509266b1c9097"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-05/input/task.md",
+      "bytes": 155,
+      "sha256": "95b97cc4c21cd14e78e00e3d8e110f6252a7660fc6dcd82d2da54dc9da0ca828"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-06/case_manifest.json",
+      "bytes": 2466,
+      "sha256": "468665368c709f1c02b915e67418e3efb1cc1b23d7a7094f80a0b2385d52c162"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-06/eval/checks.json",
+      "bytes": 880,
+      "sha256": "0579156406e2c9f896d806bf6a35819fd69dc208951be24c21cc1a9d24478db0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-06/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "712c652b27a4135529e92928f01684f5d97afa40f1362b7fced1fa88f8981459"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-06/input/task.md",
+      "bytes": 177,
+      "sha256": "77c2391008e7d00640833aa937960c0d27b6cd6d97c30956366c0ddb376adbb9"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-07/case_manifest.json",
+      "bytes": 2477,
+      "sha256": "86a93200d0364fb3ff13552371a936b35984b3589d643621473082347a75846a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-07/eval/checks.json",
+      "bytes": 844,
+      "sha256": "affd8fb18708649d34905b93ba2d95058deee8a4c9e4f45a843f6fec1ad3b61a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-07/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "83ced1058ead25e9e96aa5ac056d2c3084db65a2644365c8a37660be75afc6ca"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-07/input/task.md",
+      "bytes": 176,
+      "sha256": "0a2b3c5aface04c11a3dd1ef8bf16681ac143bd01638a7f9127cd69a95c21762"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-08/case_manifest.json",
+      "bytes": 2493,
+      "sha256": "9e59c3e4eb923ddc692de97bd1298206c10c2ace756b0d6860aaeb4f9ff5ae84"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-08/eval/checks.json",
+      "bytes": 864,
+      "sha256": "7c31f5cb1f4aaf0bd2b13dda148b47f7de67ddd9ca8fc8a7ba74706ed4b3379d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-08/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "94e3b0e1c7a1b4284e72a50f24084650e50dd891891afbf4ec4207c79ff16cbc"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-08/input/task.md",
+      "bytes": 170,
+      "sha256": "174f9d0187579f8e80b175d95751fd8a0bfdf5b6790c30676de6562e08c531bf"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-09/case_manifest.json",
+      "bytes": 2445,
+      "sha256": "4638e6ec641c274874e60bfebd08ecb9bd332222d7e67d1f6f35bec45232ccd7"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-09/eval/checks.json",
+      "bytes": 896,
+      "sha256": "d1889231f828ab8bb5b6ac9b6b2a3427c1470e4630041a6024e04d86dff14140"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-09/eval/rubric.md",
+      "bytes": 726,
+      "sha256": "2206eba6f5a76c9c6f679412a70b9be10a04acf22f27d1b29710ecbf9a5df32d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-mcp-09/input/task.md",
+      "bytes": 285,
+      "sha256": "eeec2e31eee5cd159fe28c6769252956998a94adfc125ae8c8ec9179e8718a74"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-01/case_manifest.json",
+      "bytes": 2587,
+      "sha256": "c6c48698186a1b2c999d6ebc17db32f3eb70f2fc4093d7215763af0404a23994"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-01/eval/checks.json",
+      "bytes": 918,
+      "sha256": "7d208446ddef43871c7fd32b074fdb288e615584221e44fa6648c9808c6e7cb6"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-01/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "005357e815e36e35339a4affa1500ad818b882baba1cb73b49b979049820b271"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-01/input/task.md",
+      "bytes": 479,
+      "sha256": "b5f8e21ea6ad030cea3211fcaa15c4bd4c86bd74388d6210dcf913ab3eca68c0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-02/case_manifest.json",
+      "bytes": 2659,
+      "sha256": "f2fbb4cfe0410bc5f24dbb30e4ddbc37919aa118db54f77627e38efaae351d66"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-02/eval/checks.json",
+      "bytes": 950,
+      "sha256": "6a6494152255227c25046fd50a2b234e2cf5187e2eeaa8c19e982b4b07cb68d0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-02/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "39738a2c4d03b417e9484ed7f04f1dd67ebd88284a2850d28913501f3df8a1ee"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-02/input/task.md",
+      "bytes": 487,
+      "sha256": "229363e93a22677567caf78d1b8ea6e840ea5644fbb1c41840f48c3a8e55ee2c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-03/case_manifest.json",
+      "bytes": 2792,
+      "sha256": "f4deb1bae88b5a0410aaa1acc171edafaa55102e219541e39cc571d268bab46c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-03/eval/checks.json",
+      "bytes": 970,
+      "sha256": "d1a235f09cb5f4b992416a4ce340d1bf56f08ca0f4679ca5ea5e820af180bcbb"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-03/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "99d354563a5312ed03f37d961ceb881bdd0d5ae303264cdf10fbe5df91953e7d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-03/input/task.md",
+      "bytes": 492,
+      "sha256": "d3549ff899056230abc4d803e724197640fe8f77197362fcff05c04dbb91f0ab"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-04/case_manifest.json",
+      "bytes": 2591,
+      "sha256": "f1341f31f52760a3ce9054fe4357e3cbaf2a5093d71bc0bdb4d05dadd3a7bf76"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-04/eval/checks.json",
+      "bytes": 906,
+      "sha256": "a736cdf36c246fd8028a679640627d2a298179db87f5650d4fa4a2b752433fe5"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-04/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "8544bb84159ec2644cb1699921b72435280b3296bc4fbab93fd506bbf3464b85"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-04/input/task.md",
+      "bytes": 476,
+      "sha256": "6fd9ef69d43a22fb1056453451cd0ad9dc6b239830acd64ff5a3dd9ad26edb22"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-05/case_manifest.json",
+      "bytes": 2513,
+      "sha256": "77f73676f4402448d51bf21b3348f5b97a2fe487ec31b38edeac0a4382b52fcd"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-05/eval/checks.json",
+      "bytes": 866,
+      "sha256": "b780fce006ee248ffadac52d8352732867645b39a88bab8f518e180eb096b25a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-05/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "fcd8c05ab7180cf3f972e7e0cafa10be1382309030a43f271095f1d6686573f4"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-05/input/task.md",
+      "bytes": 466,
+      "sha256": "4d5708c9d730b28e41ef59dec7c0e86397aa48fb02d3c02f75b8ecc99d671b65"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-06/case_manifest.json",
+      "bytes": 2700,
+      "sha256": "2b51f5c6b2c5919dea5275970a0e63e73711caa9ba02b876e39d83836d3d8eea"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-06/eval/checks.json",
+      "bytes": 962,
+      "sha256": "7dd7a76925f294fa014a1dc31d5cc4acd36fa9e464d9f37eb14536b0320ca2a6"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-06/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "d1e2e94cad6a747f6a319dfbeda9bef513b9d56c7a80d2c55750f0082dfa44ee"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-06/input/task.md",
+      "bytes": 490,
+      "sha256": "01aea99693f9da6e779648d48b4975825f16f62385b82ec38530d9b9a5d28074"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-07/case_manifest.json",
+      "bytes": 2524,
+      "sha256": "9e0ca780d5586394e548cd1446dc0ab8d080a6d8d45c53e013aa2d25b4ad5a69"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-07/eval/checks.json",
+      "bytes": 890,
+      "sha256": "d8185de37e820c09e4acb5ae79b025a78a06c41eeb8f651d51daa8860c670ff0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-07/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "216afc59f8c94aedb333e565c9e5574aecaf248729d49323de569592141dccb7"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-07/input/task.md",
+      "bytes": 472,
+      "sha256": "45c49de13ee0ff4197bbf814c77a66c0881e36210c468fb214e8e6a9410c555c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-08/case_manifest.json",
+      "bytes": 2667,
+      "sha256": "c85d500d9fa965ead32f5c4f9748418a75dfcafaf7d39a3ae9970e4821371458"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-08/eval/checks.json",
+      "bytes": 942,
+      "sha256": "e133a0800abaf827047fe4d0af2c2fb6cfe0205ca714234455c730860452a40c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-08/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "f694ae4d2128def16c46b48c86ded6f3bd8eaf09ac6d2446deebd2eab0ce1403"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-08/input/task.md",
+      "bytes": 485,
+      "sha256": "3b60e554f4597b683f0698632bf5470f34fe88986dc6f107e9d7ea35cfe1f4c2"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-09/case_manifest.json",
+      "bytes": 2633,
+      "sha256": "a88eacdb945278f09a0625d553343b379c798f7e6ea838d91119ce490956c66a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-09/eval/checks.json",
+      "bytes": 954,
+      "sha256": "056207d250ffd69e449ab68ee4a4fa32e53c92c729208ec74fe22c1598617917"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-09/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "60f49f4bb59f83feb8f85356c4f8c6cbfe735049a9c0acffe89b228db8b30724"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-09/input/task.md",
+      "bytes": 488,
+      "sha256": "def89053f850e9ca45c007497b124dcd288e4749bfae294d4169c5deba491a4e"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-10/case_manifest.json",
+      "bytes": 2625,
+      "sha256": "279c0cc5aa0402d37125dc6a7207359a7457e0e66ebcb973f22b15f9b949b037"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-10/eval/checks.json",
+      "bytes": 918,
+      "sha256": "3e9c40f6c5912169c2cea1e66494f42e5a7e591217b86a9a681ba6daceb3c0dc"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-10/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "f1c4fd83e1875404da968d13ce4774a425a29b0e462281c7aac9311fdb1fba89"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-10/input/task.md",
+      "bytes": 479,
+      "sha256": "502ad4bc8f39564eedcc2d856bf93fa0765e2bf55328969f3b81c2e72ab08a85"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-11/case_manifest.json",
+      "bytes": 2525,
+      "sha256": "5a98ed65b863d153e8d5e17d0f0720df4190e81af6ea73d53a7f924c1bcc949b"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-11/eval/checks.json",
+      "bytes": 898,
+      "sha256": "ff3e63aa52447ebb1194178f885ab9de6efc691af26a10b672c9986d6367fb17"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-11/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "a151b8244c0a01572dd613db5b9a7596cd29319e3958cbb4414761ced557176d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-11/input/task.md",
+      "bytes": 474,
+      "sha256": "da7eb9b975cdfefc293ae50ca48a487fabd4fc02fed97acde4059a1b50d6954b"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-12/case_manifest.json",
+      "bytes": 2631,
+      "sha256": "1dfeb6dae2ee2e34c9bbe428f450c9dc272e83b885f73780db01e2e04eb8c834"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-12/eval/checks.json",
+      "bytes": 894,
+      "sha256": "78b145154d84f59bb303ee131e735247ec07ff05c72dc1e23c8fa0a8962e2b11"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-12/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "2dabe321f0458137f91e235cf5a3baabb38c6e7c668ee355bc751357bf68ceda"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-12/input/task.md",
+      "bytes": 473,
+      "sha256": "3a5fed2ff02f9ca411c22eb2d4ac905790dbf7572b7b8d4e6f198b35c43ecf5a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-13/case_manifest.json",
+      "bytes": 2789,
+      "sha256": "11daec6efd9b4f478ea56ee9dc68f150345d33efe3d2755f74075787da44d25f"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-13/eval/checks.json",
+      "bytes": 982,
+      "sha256": "53cdd5c9693e298de91cfbfa77c9f7544f233e5d673588d9e2279ea33bd59b44"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-13/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "541d5bad9ceee3cbf5b420b7ddbd3a06d92d165d252bd1557b583e522b332b71"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-13/input/task.md",
+      "bytes": 495,
+      "sha256": "4fd481c78a661cfd305e3c6a75f67740dd92b8494f0aa3ac65355e25032248df"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-14/case_manifest.json",
+      "bytes": 2653,
+      "sha256": "836dc852f39d1cb363dbf823be1825a95f9317076c9ef760ab0587aec48435e1"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-14/eval/checks.json",
+      "bytes": 930,
+      "sha256": "83e640aa265c24e8ba91310232c110cea8417bb449592ad2387b14f5ce1fd12d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-14/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "eeb8bcde3a236540cea497b1b77d69d284b483617f000572995a7521b264dd88"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-14/input/task.md",
+      "bytes": 482,
+      "sha256": "77c0f615e908d2d09e01d204ccde24992f1661ba3e1c021760d9407429cfade7"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-15/case_manifest.json",
+      "bytes": 2682,
+      "sha256": "8388d1de4a4001b3df82c02da099831cdccfe9658b7eb2c696aa5efa26e2e11f"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-15/eval/checks.json",
+      "bytes": 922,
+      "sha256": "fed2423b0b582fd6e1f05e45788a78ee8d0fb9802e80864588cb8d4554d47bba"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-15/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "69b755c090c94326dc0868a4a112e653a8a52be7df78e822a321289884ebc1e3"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-15/input/task.md",
+      "bytes": 480,
+      "sha256": "094b0f8ea17bd4d0594497e3351a850d3362077bc4cf0b4d4126c5d3836d51ea"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-16/case_manifest.json",
+      "bytes": 2736,
+      "sha256": "0f6f8d43ee4bc9c285eed1b98d6c9ead2dcbac6550178f0aec519c9a3c036fe0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-16/eval/checks.json",
+      "bytes": 958,
+      "sha256": "61c1249d410a9713720d46ab5a0ebd21c7ab79bf51b3f9f52602511e72138aab"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-16/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "6eee52c0ffe28809e32ac316dd23ce8e1a4ebf43f6d1b2dad88d7f1ce628493a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-16/input/task.md",
+      "bytes": 489,
+      "sha256": "3836b3bd9559ecd51b5627359d45889c349a214ebf7ae517c306cb6edfc14391"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-17/case_manifest.json",
+      "bytes": 2678,
+      "sha256": "384fc865f5ae333cb16a5e6ce8b758e2a3eab2839ee0069b05e8b8efed530899"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-17/eval/checks.json",
+      "bytes": 938,
+      "sha256": "08c6ad93a274e6ed547b40f56fe07e5edce3c6c487675c26942e2264cf23335d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-17/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "f28f9a2654d3feb519ff536f2a4c927cc1f65a3d010adf9f211f5b2ece133d09"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-17/input/task.md",
+      "bytes": 484,
+      "sha256": "4af182b0b2c5a2669351a945dfcd46f75136a7a56619e5ac254569360c560471"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-18/case_manifest.json",
+      "bytes": 2699,
+      "sha256": "5a230a6a959d14ce9c67ab561837827cdeee957eac0d36aa69cdc6764f759086"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-18/eval/checks.json",
+      "bytes": 954,
+      "sha256": "27ae05cc2d8217b50d72d97ee41e4e884e971efb439cd528e864bf93cd0e8a7c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-18/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "06462684973cc6fab02ca45a473772eaf65326e07a2da408ad07a154d1b226fa"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-18/input/task.md",
+      "bytes": 488,
+      "sha256": "fcd2ef796b50ca14e37206600db464736540a8ac579f1838f7e4b11113b019ce"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-19/case_manifest.json",
+      "bytes": 2641,
+      "sha256": "4e4a8ce12a24da69cac3de64a783c6b3270efafa6dca986948debf8243e87dd2"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-19/eval/checks.json",
+      "bytes": 946,
+      "sha256": "bcac37df98c403c171381ad1b432228888a7a94d73b283d2d93171d65eb538a5"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-19/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "0369c75e1ca366d3678d94f2ad192d7075851265863c0b8db5c6bd5e274aedcb"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-19/input/task.md",
+      "bytes": 486,
+      "sha256": "4271c6e33016f9402aaa8d6bb08012aaf8c6864cab53acde412877ded7168453"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-20/case_manifest.json",
+      "bytes": 2569,
+      "sha256": "696d06a184be2a5c0c8f3abadf33f5fc4bf577a90d775361e791090be9574ee7"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-20/eval/checks.json",
+      "bytes": 898,
+      "sha256": "8e566e69b19f37a67d0a04f54adcf7d22eb7aac3522fa338fb54119787405e18"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-20/eval/rubric.md",
+      "bytes": 728,
+      "sha256": "c2f7d388cc090d2f7289965995fe14a078419c4d733c98e24d6d67d129dd648c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-skill-20/input/task.md",
+      "bytes": 474,
+      "sha256": "251ffa9dbd92efc581b88793e4f15eed9d1be2d5c17f64f5afc1f55d27c3eb72"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-01/case_manifest.json",
+      "bytes": 2404,
+      "sha256": "d12ee008fe44f38a5b7ddba81e0473b8125b9fdff351c517d4402c3778d9463a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-01/eval/checks.json",
+      "bytes": 815,
+      "sha256": "a19878580cb05306e9f8700f312523c5e48940b542e9c0b3842f854286ef6965"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-01/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "8be25a995fed2e4b737e87b38243da9b8ef92a6a1e60bd4845bf3cf08b75d11d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-01/input/task.md",
+      "bytes": 165,
+      "sha256": "32f48e083f245b7f5c56afb89ef53c8a2eeb3d69d1accb803e78c27ce49e01f3"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-02/case_manifest.json",
+      "bytes": 2159,
+      "sha256": "76abf6b5cf5e7f68859ccb8ad31266723a9449f927acc238780caf87c4c27f78"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-02/eval/checks.json",
+      "bytes": 818,
+      "sha256": "388b5bd5761d73bf37d7e65dd57c700413fb39afbea3e60423f7863b5ce02b19"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-02/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "6556c638b6afd89ed1c84ac17c21cf80729585f514b82dcca1eafed8893b4668"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-02/input/task.md",
+      "bytes": 423,
+      "sha256": "dbede93cbb7c9063a2041c7b92d3f4abd019a1859d00e87aa9ed7ecbf72fe959"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-03/case_manifest.json",
+      "bytes": 2702,
+      "sha256": "2c0d95af50e135b8ffa15f462843604e16fbdce18eb898981d0031785c641bd9"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-03/eval/checks.json",
+      "bytes": 818,
+      "sha256": "4cb240c19dd5477b1ed1f1fca393c2a5068a394180c20ca6de4200d1c90442e3"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-03/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "a8911fd8b109d0e3216ca949e44d2c884c3a6df7ae3cc745c288fd0dda2988b0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-03/input/task.md",
+      "bytes": 389,
+      "sha256": "27b071ebd3683b906572b162ce78ed5ffeaf2e6e4867909d1ea91b451fde4ae3"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-04/case_manifest.json",
+      "bytes": 2208,
+      "sha256": "601aa86cd18cc0d2602b404068e1ed6958b8400521ef647b4f8084baac6118fd"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-04/eval/checks.json",
+      "bytes": 817,
+      "sha256": "8d4b5c7ca807cc035007c3e648a171170fb5ebf7b4fdd8cc229dffe0589381a1"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-04/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "352cdee88952b266df64f59a56ff3605680cf40017f19d8494dffc2a22d87177"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-04/input/task.md",
+      "bytes": 193,
+      "sha256": "a1c331926a6df190e828d82057a22c1429cf552a1401c093d041c9a795813a77"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-05/case_manifest.json",
+      "bytes": 2751,
+      "sha256": "013944036cf2442487c2d7f0efe983bf5b478e3f474a78db9bca82b550480093"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-05/eval/checks.json",
+      "bytes": 823,
+      "sha256": "cea30b363c16f26a4e1de7ef5a43469a2778aac11c8b17548c7e55e11025ba86"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-05/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "e46f9019e4af3448edff3bec967c57f5706e5ebd70fe2c46f7ed414ff0cd49e8"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-05/input/task.md",
+      "bytes": 208,
+      "sha256": "72b1a98f11143c48973dd2acb2490d4fb868ee4b0b0f951ae7eb468233613350"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-06/case_manifest.json",
+      "bytes": 1989,
+      "sha256": "fc76587d9b776eafb5872b36cb5ee2f7e05f13148d678bc914fa30d8edcf5b78"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-06/eval/checks.json",
+      "bytes": 822,
+      "sha256": "a348dc62b0bcf08cc98666991e176e9330b79c66156b20806554bea4072d3a86"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-06/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "43adcbb4a20dce885d3fb58b94fbe389cf10bf2126567b59cc38dac60b1d7b41"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-06/input/task.md",
+      "bytes": 219,
+      "sha256": "2d835b78affe628132c443029b2595d10fee9e4baf656899b9c072bf6a81b210"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-07/case_manifest.json",
+      "bytes": 2735,
+      "sha256": "d3fad87b7cfe9cba3d0f14c6fe376d08aaa2381d96cf6028ae912fcb00592f5d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-07/eval/checks.json",
+      "bytes": 823,
+      "sha256": "8370cccbeeae72558f94971c7bcc0e2fc09121eee5e3c82bd36952eb085348f9"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-07/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "855db6098703e3b53117f5f45d5fd70f5451ffb18a225da5db352ad1f8f55587"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-07/input/task.md",
+      "bytes": 215,
+      "sha256": "5b17d0988e2c67bfdb72adedf40da863a26e6cc7ce6355f604ab19a682dc29a5"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-08/case_manifest.json",
+      "bytes": 2701,
+      "sha256": "a9e6e61a4bf0750f10df8994dece0694cee615875bae4d91539d04e45d025aec"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-08/eval/checks.json",
+      "bytes": 813,
+      "sha256": "8f9c72ef85fead5b1d12991f1089ca42dc199140ecc2ac814737aee0f9815936"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-08/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "96bc78465d9d374be0d9d1f4d24a5dbbff7f0dc7c8b1f6686b0a78f19764d701"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-08/input/task.md",
+      "bytes": 295,
+      "sha256": "e97f5bfb039c1647474a2680892c7e0da052ca3ccd03d1f490f6da904e90be11"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-09/case_manifest.json",
+      "bytes": 2669,
+      "sha256": "8f648b735c498a1cebb0a6d7e071a7b9bb993342aa10c594ba792fcd674ad66b"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-09/eval/checks.json",
+      "bytes": 817,
+      "sha256": "a5cc7f3dd400c6c7618bae9d9756a71df717f7268f0a118d0dd20f863d3ee9df"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-09/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "80e021311e4807c989e7a3ea59eeab2650b05c7b1ba89594a26999a09154e1e7"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-09/input/task.md",
+      "bytes": 190,
+      "sha256": "ea367ab0fe03050e783eddc4ff6aeb35b92f76b3a24ddaf75125723e6c408868"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-10/case_manifest.json",
+      "bytes": 2766,
+      "sha256": "b3193b9ed8120f7f1dcb780b947251a6bbe8a1d7d98367d81b01252fb896d0e0"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-10/eval/checks.json",
+      "bytes": 817,
+      "sha256": "c41db2cb17eb788e4553e09e14b3f3f01907cc875de562df10c91de70786feb8"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-10/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "46e97ba42b60f6997a485ea382bcf6523134e110fe42c9d55d9c299f179b048c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-10/input/task.md",
+      "bytes": 203,
+      "sha256": "abfbd6e4996fcb146c6664807a0048f695dff482bebe1042ae578f347abe3b6b"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-11/case_manifest.json",
+      "bytes": 2692,
+      "sha256": "23c859f1852d056301dd25ca6423fb4c91391ad7ccff42a8186ca17f880188f3"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-11/eval/checks.json",
+      "bytes": 833,
+      "sha256": "50193c90be82853fd319120628f17304ca1838ad1d66fa565df31b6a9a34ca50"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-11/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "ae40eb4088a06e5d5c4edc350259531022ee06ec6c4db3a8c72df12394d94d51"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-11/input/task.md",
+      "bytes": 604,
+      "sha256": "1a52d4cba1dea6c5020cb6695935d6c8483df1c011a9255f1c5a53dde48f626b"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-12/case_manifest.json",
+      "bytes": 2755,
+      "sha256": "9a9b9cea818176a76f60005cc2a952997836c33e5355fd244ab4683de596cdee"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-12/eval/checks.json",
+      "bytes": 823,
+      "sha256": "a18daf4006b16572603afacfbe8bf5536a53d0aa6fbfd76ba48d0c696a625306"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-12/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "f824107e38a91dc3c17bcde33ed3bbe142ec6cfe9d10d9155ca944a2aa73ebe3"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-12/input/task.md",
+      "bytes": 547,
+      "sha256": "2ffb16c3a705b1792b84fd9f593b672d360638468135bc5c72b7677f37d7902f"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-13/case_manifest.json",
+      "bytes": 2155,
+      "sha256": "a9a75e7ab4d6cfa39ad3b8018a7859505a85564ae4ede0a5f7043d9bc4a8ab87"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-13/eval/checks.json",
+      "bytes": 829,
+      "sha256": "baa05062f098abfeeeb8140ea29ae511bb00e2acd67673ea1f961fe1323b3735"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-13/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "42b028022bfda9c49ebd0a0c12e38566be1c229cfa5f11bbbafed6229d798264"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-13/input/task.md",
+      "bytes": 719,
+      "sha256": "3de16dcc8db522bbcc88497f0952f074e5e103960f52de58abe0db6fa4bf3601"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-14/case_manifest.json",
+      "bytes": 2529,
+      "sha256": "ad33b292f9de64523637b22f96703f6b46b5f8ab8b1dd2643b9250ae937b5080"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-14/eval/checks.json",
+      "bytes": 808,
+      "sha256": "9d04086b0cc7dd2762602f0a884041829a5bfd37b43b1fd9d7201045142b6557"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-14/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "e810887c09f8abad40f98118cf9bc0eabb230a36986be35b7c1a8a7b65800e62"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-14/input/task.md",
+      "bytes": 103,
+      "sha256": "01c0c23854d8f273e045784f2e76e4b72145caf2d37783f450bf0f972f1b90eb"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-15/case_manifest.json",
+      "bytes": 2165,
+      "sha256": "aeab697e09adbf431c83b1fd7fa2a72ff8488eea76e94733fc1d72ce39a957b5"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-15/eval/checks.json",
+      "bytes": 821,
+      "sha256": "3d77ac3d65eb6c66989e1471efebadfdad7aec64b3484774fc6686ab07a81a21"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-15/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "7296a25284cea06559f26b6275bffa5541a531d3a1aa0209787d49fc8faa3d12"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-15/input/task.md",
+      "bytes": 769,
+      "sha256": "9e11c311c83f51c1bfa4ea6f9d3bf85582dd7116c23b314b6e97a351fccafa2e"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-16/case_manifest.json",
+      "bytes": 2071,
+      "sha256": "807cd60832e59668e56e3278eef5120f5c16c13ba56e424f46132c91e97d374a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-16/eval/checks.json",
+      "bytes": 814,
+      "sha256": "82735fb4c4b4417de27640d9830e6abccc78551ab81188f077998b4994662068"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-16/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "2e5846cfb2172de6c8f43e1b605fcee7a42282ba51f379238e07008b85bb1c5b"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-16/input/task.md",
+      "bytes": 325,
+      "sha256": "5b118496e89cdb9fcf60218b3bb9d4c18af26a88809851b54b4fdfca5c0e292a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-17/case_manifest.json",
+      "bytes": 2438,
+      "sha256": "ba35763d1aebad99f9c1db63f48218f6b322b025b07cd20d23b31f9710ecc895"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-17/eval/checks.json",
+      "bytes": 822,
+      "sha256": "4ed46070235c24262fce499d737452b5bdab5bb28fd5774e7fdb233b477b648c"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-17/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "0e5a39f71c95a63ae4d55e0a0cbf4a4d6731ce85934f5ada8c46a967371629b4"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-17/input/task.md",
+      "bytes": 56,
+      "sha256": "c962b249c38940c8b99a79f8b1542e1da0969ced288747b108a65ff85af9abaa"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-18/case_manifest.json",
+      "bytes": 2716,
+      "sha256": "351442d488ea6ed6833392e0341b56c8484935a710c3d5bb5eb38ac5a59234f5"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-18/eval/checks.json",
+      "bytes": 821,
+      "sha256": "7c83cb6e7e96d637c7c63aba30f466998f3537339e4721d3f656c1ca8f60d38a"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-18/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "084283e6cc94811b994a1da8a9340e245dd49f65816ad350771afcc099a57110"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-18/input/task.md",
+      "bytes": 283,
+      "sha256": "090a3da21f229557337f7563b4e017727fed77c38fe9b50d3d5f4c50a3f4622d"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-19/case_manifest.json",
+      "bytes": 2724,
+      "sha256": "d7e35be5c8c17882dc8cd2905864e6b47af8765bad184ff9216eb1c7552cc43e"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-19/eval/checks.json",
+      "bytes": 823,
+      "sha256": "c49bbac4140f137ff92a8fe57c8666f7d0e46be4990bb7e1d12b3d8d3f501a9f"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-19/eval/rubric.md",
+      "bytes": 731,
+      "sha256": "5fef8559f2f55ac939a696e42e563e6e84cf7d1b05f4fe477ddeb89f5613dfae"
+    },
+    {
+      "path": "cases/main-agent-plugin-live-template-19/input/task.md",
+      "bytes": 297,
+      "sha256": "424558573b5edbcc4f26c93aac0d7f8fb86c4e1bacdfe4f437f98fbdfea1a056"
+    },
+    {
+      "path": "cases.zip",
+      "bytes": 159996,
+      "sha256": "bd9424ef5df13d49e89c4f3f644ab3f7a6d81693b3d698ddc85d0af43a0c10ee"
+    },
+    {
+      "path": "eval_set_api_payload.json",
+      "bytes": 14361,
+      "sha256": "10656cb2b3574e84f891eaa8e03dc5e9d7bbff79062363979e9d61a09e4d1f00"
+    },
+    {
+      "path": "eval_sets/main-agent-plugin-live.yaml",
+      "bytes": 12261,
+      "sha256": "520813e14126479a4aefb7b053a071c04851284d89716ff404019147c3adc8ec"
+    },
+    {
+      "path": "install.py",
+      "bytes": 2034,
+      "sha256": "533aa9e44eacd99a3b3788d9fcf48ca7bd3d247b158a9010f6e6e4ce1dfe92bb"
+    },
+    {
+      "path": "recipes/main-agent-plugin-live-mcp.yaml",
+      "bytes": 1352,
+      "sha256": "f139d69b9b768681df9d658f731af7982e5275aed49bd456dff39fa1838c30e4"
+    },
+    {
+      "path": "recipes/main-agent-plugin-live-skills.yaml",
+      "bytes": 1838,
+      "sha256": "2adc592f1f5cd37a867234a8e37e39e1759123930bfc44c17ee3f583bbbcde67"
+    },
+    {
+      "path": "recipes/main-agent-plugin-live-templates.yaml",
+      "bytes": 1859,
+      "sha256": "1af96cb5c7d79fd4d0cf2998ee72347b9592c026c35e32d53c61e6cb0cb2e0ec"
+    },
+    {
+      "path": "registry.fragment.json",
+      "bytes": 24811,
+      "sha256": "78ca1f10e9414f7cdeeb7a32aec6036642f6ee176b9032091da4163b98a797d6"
+    },
+    {
+      "path": "reports/index.html",
+      "bytes": 55831,
+      "sha256": "0c384e4295da50cae48f4d7615a34db54ada7b0296efada59b6c222e4426676d"
+    },
+    {
+      "path": "reports/main-agent-plugin-live-summary.json",
+      "bytes": 97144,
+      "sha256": "93d577fb3c120357cdb8b1567800ad029e1754377f3bbf7b797d60f2c27d56ad"
+    },
+    {
+      "path": "run_requests.json",
+      "bytes": 385,
+      "sha256": "107c501b8fb35b8239dac8cf151db29969e867be1e8a2fd6eed64d7a0d345c1b"
+    },
+    {
+      "path": "runner.cjs",
+      "bytes": 15731,
+      "sha256": "a03c696e9ef72d5baa9ad4d25f564cbd98ca9bc36c112d275e7a6a3fe90270b0"
+    }
+  ]
+}

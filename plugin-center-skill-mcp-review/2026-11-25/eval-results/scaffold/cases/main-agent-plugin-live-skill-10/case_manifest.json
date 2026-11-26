@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-skill-10",
+  "title": "listing-sandbox-analyzer",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "Skill",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T02:57:11.098Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "skill:listing-sandbox-analyzer"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "skill-listing-sandbox-analyzer",
+  "source_result_id": "skill-listing-sandbox-analyzer-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 18:57:29\n执行过程\n·\n11 个工具\n\n我会先读取 listing-sandbox-analyzer 的入口说明和它引用的执行步骤，再用最小、公开且不会改动业务数据的输入实际跑一遍，并如实列出调用与产物。技能要求默认走完整审计，且 ASIN 模式必须先用它自带的 fetch_product.py 取证；因此我会用单个美国站公开商品 ASIN 作为明确输入。运行环境没有 TodoWrite/计划状态工具，我会按技能阶段顺序执",
+  "reply_length": 945,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=64b70f34-52a7-4d39-a466-166b08a502bf",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-listing-sandbox-analyzer-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-listing-sandbox-analyzer-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

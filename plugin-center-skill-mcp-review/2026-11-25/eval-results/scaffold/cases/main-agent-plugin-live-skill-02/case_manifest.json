@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-skill-02",
+  "title": "amazon-competitor-compare-report",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "Skill",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T02:37:34.862Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "skill:amazon-competitor-compare-report"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "skill-amazon-competitor-compare-report",
+  "source_result_id": "skill-amazon-competitor-compare-report-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 18:38:10\n执行过程\n·\n8 个工具\n\n我将按 amazon-competitor-compare-report 的流程，选取最小安全输入（固定 2 个美国站 ASIN，做基础竞品对比）并实际执行所需工具/脚本。先读取技能说明，再调用它要求的数据工具并生成报告。已实际完成该 skill 的最小真实任务：美国站 1 个基准商品 + 1 个指定竞品，仅查询公开商品数据。\n\n输入由我选定：B07FZ8S74R（基准，非认定为你的产",
+  "reply_length": 1733,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=bb979bf5-b6e4-4e31-a035-908b7d1cdaab",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-amazon-competitor-compare-report-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-amazon-competitor-compare-report-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

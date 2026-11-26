@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-mcp-04",
+  "title": "lingxing",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "MCP",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T03:57:14.800Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "mcp:lingxing"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "mcp-lingxing",
+  "source_result_id": "mcp-lingxing-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 19:57:36\n执行过程\n·\n1 个工具\n\n我现在直接调用当前主 Agent 可用的领星账号查询工具，并按工具实际返回结果反馈。已成功调用 list_lingxing_accounts，工具返回 4 个可见领星账号：\n\nAmazon-LanJiAITest（bindingId: 219）\nXianfa（bindingId: 114）\n15397065925（bindingId: 187）\nluckeeAI（bindingId: ",
+  "reply_length": 268,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "assistant-final",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=7fa0999e-8967-406c-b980-3a4218423855",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/mcp-lingxing-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/mcp-lingxing-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

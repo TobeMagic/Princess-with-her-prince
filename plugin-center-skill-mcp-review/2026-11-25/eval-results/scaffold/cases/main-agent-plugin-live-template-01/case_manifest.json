@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-01",
+  "title": "Amazon 链接解析",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:43:37.278Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:Amazon 链接解析"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "Agent 正常响应并停在补充 ASIN、链接、Excel 或关键词；本轮未形成完整业务输出。",
+  "source_case_id": "template-amazon-link-parsing",
+  "source_result_id": "template-amazon-link-parsing-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:43:52\n执行过程\n\n请把实际 Amazon 商品链接发我；目前的 [粘贴URL] 是占位符。收到链接后，我会整理商品详细参数、Q&A 高频问题和目标受众画像，并输出为 Markdown 报告。",
+  "reply_length": 124,
+  "is_short_reply": true,
+  "terminal_status": "需补充输入",
+  "terminal_state": "needs-input",
+  "terminal_reason": "assistant-final",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=818aeef1-3192-46c2-ba46-6ac055503c95",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-amazon-link-parsing-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-amazon-link-parsing-result.json",
+  "basic_conclusion": "Agent 正常响应并停在补充 ASIN、链接、Excel 或关键词；本轮未形成完整业务输出。"
+}

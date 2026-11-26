@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-19",
+  "title": "店铺经营巡检",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:10:07.183Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:店铺经营巡检"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "template-store-inspection-operations",
+  "source_result_id": "template-store-inspection-operations-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:11:05\n执行过程\n·\n3 个工具\n\n你补充的 ASIN 和 US 范围足以尝试单品数据查询；我会先重新核对当前可见店铺，并检查该 ASIN 工作区是否有近 14 日指标。巡检报告仍需通过技能指定的完整商品范围和固定核验流程生成，我会据实区分单品数据与全店巡检结果。按你提供的范围检查后，目前无法生成完整巡检结果或 HTML：可见店铺清单为空，指定 ASIN 的工作区也没有广告或订单数据覆盖。两期的总销量、广告销量、广告花费",
+  "reply_length": 514,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=00f403ed-1e2a-48e8-bdea-e3a76460f52f",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-store-inspection-operations-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-store-inspection-operations-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

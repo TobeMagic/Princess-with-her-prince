@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-09",
+  "title": "行业趋势搜索",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:44:02.657Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:行业趋势搜索"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "template-industry-trend-search",
+  "source_result_id": "template-industry-trend-search-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:44:34\n执行过程\n·\n16 个工具\n\n我会先核对这个 ASIN 对应的商品，再按你给的美国市场、家居类目和预算范围查近两周可用的经营与市场信息。若某项数据源不支持该时间窗口或范围，我会把缺口单独标明。已按 ASIN B0GTK8MP5Y 定位为美国站 GarveeHome 四人餐桌椅套装。趋势证据支持“暖木色、适配小空间、收纳与耐用性”作为值得关注的方向；但店铺近 7 日对比、该商品近期销量和 TikTok 热点都无法从",
+  "reply_length": 2388,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=46c67707-10d5-4259-b38e-2cff09460929",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-industry-trend-search-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-industry-trend-search-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

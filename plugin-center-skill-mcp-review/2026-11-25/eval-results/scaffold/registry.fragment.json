@@ -1,0 +1,774 @@
+{
+  "schema_version": "1.1",
+  "source": "plugin-center-skill-mcp-review/2026-11-25/eval-results/scaffold",
+  "cases": [
+    {
+      "case_id": "main-agent-plugin-live-skill-01",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-01",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:amazon-category-analysis"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-02",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-02",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:amazon-competitor-compare-report"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-03",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-03",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:amazon-listing-visual-strategy-luckee"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-04",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-04",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:amazon-review-scraper"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-05",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-05",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:html-to-pdf"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-06",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-06",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:launch-listing-package-orchestrator"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-07",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-07",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:listing-diagnosis"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-08",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-08",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:listing-diagnosis-orchestrator"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-09",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-09",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:listing-optimization-orchestrator"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-10",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-10",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:listing-sandbox-analyzer"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-11",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-11",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:luckee-plugin-smoke"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-12",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-12",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:select-ad-keywords"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-13",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-13",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-business-analysis-orchestrator"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-14",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-14",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-competitor-search"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-15",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-15",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-m1-market-trend"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-16",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-16",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-m2-competition-structure"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-17",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-17",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-m3-seller-logistics"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-18",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-18",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-m5-new-product-survival"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-19",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-19",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:selection-m6-benchmark-teardown"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-skill-20",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-skill-20",
+      "case_type": "main_agent_im",
+      "scenario": "Skill",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "skill:violation-detection"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-01",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-01",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:amazon-product"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-02",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-02",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:amazon_ads_main"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-03",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-03",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:display-files"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-04",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-04",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:lingxing"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-05",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-05",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:luckee_main_agent"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-06",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-06",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:sellersprite-mcp"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-07",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-07",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:sif-mcp"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-08",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-08",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:sorftime-mcp"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-mcp-09",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-mcp-09",
+      "case_type": "main_agent_im",
+      "scenario": "MCP",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "mcp:write-validated-json"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-01",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-01",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:Amazon 链接解析"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-02",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-02",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:蓝海掘金 (高增长、低拥挤细分市场挖掘)"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-03",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-03",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:竞品广告策略分析"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-04",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-04",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:多竞品横向对比"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-05",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-05",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:竞品 Listing 与关键词透视"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-06",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-06",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:评论分析 (痛点识别)"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-07",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-07",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:数据可视化描述"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-08",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-08",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:入场决策 (特定类目/产品商业可行性诊断)"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-09",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-09",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:行业趋势搜索"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-10",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-10",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:词根分析：高频属性拆解"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-11",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-11",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:帮我了解我负责的商品"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-12",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-12",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:今天有哪些事情需要我处理？"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-13",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-13",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:本周整体表现怎么样？"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-14",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-14",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:市场趋势洞察"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-15",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-15",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:差评反推 (痛点驱动型选品与产品升级)"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-16",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-16",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:新品推广策略"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-17",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-17",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:Alexa 语义资产审计（原 Rufus）：AI 时代 Listing 竞争力诊断"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-18",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-18",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:店铺广告活动巡检"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    },
+    {
+      "case_id": "main-agent-plugin-live-template-19",
+      "product": "main-agent",
+      "asin": "n-a",
+      "case_dir": "cases/main-agent-plugin-live-template-19",
+      "case_type": "main_agent_im",
+      "scenario": "模板 Query",
+      "capabilities": [
+        "main_agent_plugin_runtime",
+        "template:店铺经营巡检"
+      ],
+      "difficulty": "easy",
+      "benchmark_ready": false,
+      "gold_type": "capability_checks",
+      "source_quality": "live_browser_thread_2026_11_26"
+    }
+  ]
+}

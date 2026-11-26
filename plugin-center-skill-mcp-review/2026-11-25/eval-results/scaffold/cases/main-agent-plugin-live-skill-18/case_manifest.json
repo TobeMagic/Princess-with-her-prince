@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-skill-18",
+  "title": "selection-m5-new-product-survival",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "Skill",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T03:13:35.290Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "skill:selection-m5-new-product-survival"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "skill-selection-m5-new-product-survival",
+  "source_result_id": "skill-selection-m5-new-product-survival-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 19:14:02\n执行过程\n·\n8 个工具\n\n我会实际运行这个技能的最小分析流程，先读取指示，再选择明确的测试输入并查询真实数据。已查到美国站 Garlic Presses（压蒜器，节点 678518011）的真实数据。我选用 2026 年 10 月作为测试区间；接下来核对商品上架时长与销量分布，报告会明确标注无法取得的三年趋势和 New Release 指标，并按技能要求尝试导出 PDF。已在当前主 Agent 实际执行该技能，",
+  "reply_length": 847,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "assistant-final",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=394a29c4-9b80-4d8b-8f32-672cdd26f351",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-selection-m5-new-product-survival-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-selection-m5-new-product-survival-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

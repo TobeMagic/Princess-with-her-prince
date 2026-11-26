@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-mcp-01",
+  "title": "amazon-product",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "MCP",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T03:58:20.642Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "mcp:amazon-product"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "mcp-amazon-product",
+  "source_result_id": "mcp-amazon-product-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 19:58:41\n执行过程\n·\n1 个工具\n\n我会先检查本轮实际挂载的工具，确认 amazon-product.fetch_product 是否可用，再直接查询该 ASIN。amazon-product.fetch_product 已在当前主 Agent 实际调用，查询参数为 ASIN B0GTK8MP5Y、站点 US。工具返回明确错误：HTTP 404 Not Found（success: false，data: null，ap",
+  "reply_length": 260,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "assistant-final",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=d3b44ad8-2274-47fe-a2ba-c3525bc1707d",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/mcp-amazon-product-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/mcp-amazon-product-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

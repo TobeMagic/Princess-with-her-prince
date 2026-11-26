@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-08",
+  "title": "入场决策 (特定类目/产品商业可行性诊断)",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:29:25.919Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:入场决策 (特定类目/产品商业可行性诊断)"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "template-entry-feasibility",
+  "source_result_id": "template-entry-feasibility-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:30:22\n执行过程\n·\n18 个工具\n\n收到：ASIN 为 B0GTK8MP5Y，US、家居、预算 $1,000，窗口为近 7 日对比前 7 日，范围按你给定。你已明确要求完整诊断，我按全部模块继续；先核实当前可用的市场数据工具和该 ASIN 对应类目。初步结论：暂不建议用 $1,000 预算直接备货入场。 US 站细分类目有可观销售，但该 ASIN 当前价格、利润和近 14 日销量数据不足以验证单品经济性；家具套装的运费",
+  "reply_length": 1356,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=92bb0039-1923-4c7e-a4d0-04d5e90ab028",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-entry-feasibility-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-entry-feasibility-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

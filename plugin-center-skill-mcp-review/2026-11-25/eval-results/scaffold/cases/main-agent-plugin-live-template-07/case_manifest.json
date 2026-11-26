@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-07",
+  "title": "数据可视化描述",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:42:47.980Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:数据可视化描述"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "Agent 正常响应并停在补充 ASIN、链接、Excel 或关键词；本轮未形成完整业务输出。",
+  "source_case_id": "template-data-visualization-analysis",
+  "source_result_id": "template-data-visualization-analysis-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:43:09\n执行过程\n·\n3 个工具\n\n我先检查工作区里的 Excel 文件和可用表格读取工具，再根据实际数据概括趋势、峰值时段与广告花费和销售额的关系。我在当前工作区没有找到 Excel 文件或可读取的表格附件，因此还无法判断销售趋势、销售高峰或广告花费与销售额的相关性。请把 Excel 文件上传到对话中，或放到工作区后告诉我文件名；拿到数据后我会计算相关性并给你趋势图或绘图代码。",
+  "reply_length": 219,
+  "is_short_reply": false,
+  "terminal_status": "需补充输入",
+  "terminal_state": "needs-input",
+  "terminal_reason": "assistant-final",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=b212861c-60f8-4728-9622-b31d417aa758",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-data-visualization-analysis-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-data-visualization-analysis-result.json",
+  "basic_conclusion": "Agent 正常响应并停在补充 ASIN、链接、Excel 或关键词；本轮未形成完整业务输出。"
+}

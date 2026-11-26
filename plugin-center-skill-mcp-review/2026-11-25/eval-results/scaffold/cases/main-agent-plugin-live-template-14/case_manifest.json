@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-14",
+  "title": "市场趋势洞察",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:35:38.391Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:市场趋势洞察"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "template-market-trend",
+  "source_result_id": "template-market-trend-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:36:32\n执行过程\n·\n17 个工具\n\n我将按已确认的 US、家居类目、ASIN B0GTK8MP5Y、近 7 日对比上 7 日、预算 $1,000 执行市场趋势与竞争机会分析，并结合可用的 SellerSprite/Sorftime 数据返回完整结果。ASIN 已识别为小户型 2 人餐桌椅套装（Home & Kitchen / Table & Chair Sets），不是泛家居。上周和上上周的逐日店铺数据无法从市场研究接",
+  "reply_length": 1083,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=cd394b32-1fe4-4867-b9a0-ac47c1263695",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-market-trend-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-market-trend-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

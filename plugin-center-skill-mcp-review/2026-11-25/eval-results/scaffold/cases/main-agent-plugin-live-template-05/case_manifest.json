@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-template-05",
+  "title": "竞品 Listing 与关键词透视",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "模板 Query",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T04:38:32.712Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "template:竞品 Listing 与关键词透视"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "template-competitor-listing-analysis",
+  "source_result_id": "template-competitor-listing-analysis-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 20:39:11\n执行过程\n·\n8 个工具\n\n我会按已给参数直接查竞品资料与流量证据，并把可验证数据和判断分开呈现。先核对本轮可用的市场数据工具及竞品分析流程；“全部店铺/商品、近7日对比上7日、预算”与竞品 ASIN 诊断的关联范围，我会在结果中说明，避免把卖家自有经营数据误当成竞品数据。已拿到两类 Listing 数据，但存在明显冲突：卖家精灵返回的是“2人/3件套”，Sorftime 返回的五点却写“4人/5件套”。流量关键",
+  "reply_length": 1113,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=341ba928-141f-499d-9374-032d33198f20",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-competitor-listing-analysis-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/template-competitor-listing-analysis-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}

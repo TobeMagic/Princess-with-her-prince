@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "case_id": "main-agent-plugin-live-skill-07",
+  "title": "listing-diagnosis",
+  "product": "main-agent",
+  "asin": "n-a",
+  "case_type": "main_agent_im",
+  "scenario": "Skill",
+  "task_type": "main-agent-plugin-live",
+  "agent_visible_roots": [
+    "input/"
+  ],
+  "judge_only_roots": [
+    "judge_only/",
+    "eval/"
+  ],
+  "time_window": {
+    "start": "2026-11-26",
+    "end": "2026-11-26",
+    "snapshot_taken_at": "2026-11-26T02:51:09.409Z"
+  },
+  "capabilities": [
+    "main_agent_plugin_runtime",
+    "skill:listing-diagnosis"
+  ],
+  "difficulty": "easy",
+  "gold_type": "capability_checks",
+  "source_quality": "live_browser_thread_2026_11_26",
+  "data_quality": {
+    "mode": "live_main_agent",
+    "execution": "playwright_browser_thread",
+    "quality_judge": false,
+    "eval_console_run": false
+  },
+  "benchmark_ready": false,
+  "input_contract": {
+    "channel": "dev 6466 main-agent browser thread",
+    "base": "http://34.143.132.97:6466",
+    "user": "Mario",
+    "plugin_bundle": "luckee-official 0.3.1",
+    "fixture": false
+  },
+  "expected_behavior_summary": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。",
+  "source_case_id": "skill-listing-diagnosis",
+  "source_result_id": "skill-listing-diagnosis-result.json",
+  "short_reply": "L\nLuckee AI\n2026-11-25 18:51:34\n执行过程\n·\n6 个工具\n\n我会按 listing-diagnosis skill 的实际流程执行一次最小诊断，先读取该 skill 的说明，再用一组明确的安全输入完成真实调用，并回报调用结果与输出路径。Skill 文件要求 ASIN 与同站点竞品 Listing 数据；当前工具清单没有它列出的 SellerSprite product_detail，但有 asin_detail 和竞品查询。我会先用公开 ASI",
+  "reply_length": 1670,
+  "is_short_reply": false,
+  "terminal_status": "真实完成",
+  "terminal_state": "complete",
+  "terminal_reason": "waiting-input",
+  "thread_url": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=5b10ec68-d55b-4b21-bf33-1504e6af6a3b",
+  "public_screenshot_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-listing-diagnosis-thread-full.png",
+  "public_result_url": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results/skill-listing-diagnosis-result.json",
+  "basic_conclusion": "真实执行并形成回复；路径、加载与调用可行，未评价业务效果。"
+}
