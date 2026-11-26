@@ -1383,5 +1383,255 @@
       ]
     },
     "caveat": "A-2 covers one working tool per server; it does not enumerate or validate every tool exposed by each server. SIF and lingxing expose many tools."
+  },
+  "per_item_plan": {
+    "skill": {
+      "count": 20,
+      "mode": "one_skill_one_case",
+      "evidence": "20 independent live threads in V2 A-1"
+    },
+    "mcp_tool": {
+      "count": 33,
+      "mode": "one_tool_one_case",
+      "completed": 1,
+      "planned": 32,
+      "completed_cases": [
+        {
+          "id": "tool-sellersprite_mcp-product_node",
+          "server": "sellersprite_mcp",
+          "tool": "product_node",
+          "target": "sellersprite-mcp · product_node",
+          "threadUrl": "http://34.143.132.97:6466/workspace/main-agent/chat?thread_id=6b4ce8ef-556b-4926-bdb9-6ef75f461f3d",
+          "screenshot": "https://tobemagic.github.io/Princess-with-her-prince/plugin-center-skill-mcp-review/2026-11-25/eval-results-tool-cases/tool-sellersprite_mcp-product_node-thread-full.png",
+          "status": "complete"
+        }
+      ],
+      "pending_cases": [
+        {
+          "id": "tool-sellersprite_mcp-asin_detail",
+          "server": "sellersprite_mcp",
+          "tool": "asin_detail",
+          "target": "sellersprite-mcp · asin_detail",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-asin_prediction",
+          "server": "sellersprite_mcp",
+          "tool": "asin_prediction",
+          "target": "sellersprite-mcp · asin_prediction",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-competitor_lookup",
+          "server": "sellersprite_mcp",
+          "tool": "competitor_lookup",
+          "target": "sellersprite-mcp · competitor_lookup",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-google_trend",
+          "server": "sellersprite_mcp",
+          "tool": "google_trend",
+          "target": "sellersprite-mcp · google_trend",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-keepa_info",
+          "server": "sellersprite_mcp",
+          "tool": "keepa_info",
+          "target": "sellersprite-mcp · keepa_info",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-keyword_research_trends",
+          "server": "sellersprite_mcp",
+          "tool": "keyword_research_trends",
+          "target": "sellersprite-mcp · keyword_research_trends",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_brand_concentration",
+          "server": "sellersprite_mcp",
+          "tool": "market_brand_concentration",
+          "target": "sellersprite-mcp · market_brand_concentration",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_ebc_distribution",
+          "server": "sellersprite_mcp",
+          "tool": "market_ebc_distribution",
+          "target": "sellersprite-mcp · market_ebc_distribution",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_listing_date_distribution",
+          "server": "sellersprite_mcp",
+          "tool": "market_listing_date_distribution",
+          "target": "sellersprite-mcp · market_listing_date_distribution",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_listing_trend_distribution",
+          "server": "sellersprite_mcp",
+          "tool": "market_listing_trend_distribution",
+          "target": "sellersprite-mcp · market_listing_trend_distribution",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_price_distribution",
+          "server": "sellersprite_mcp",
+          "tool": "market_price_distribution",
+          "target": "sellersprite-mcp · market_price_distribution",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_product_demand_trend",
+          "server": "sellersprite_mcp",
+          "tool": "market_product_demand_trend",
+          "target": "sellersprite-mcp · market_product_demand_trend",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_rating_distribution",
+          "server": "sellersprite_mcp",
+          "tool": "market_rating_distribution",
+          "target": "sellersprite-mcp · market_rating_distribution",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_ratings_count_distribution",
+          "server": "sellersprite_mcp",
+          "tool": "market_ratings_count_distribution",
+          "target": "sellersprite-mcp · market_ratings_count_distribution",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_research_statistics",
+          "server": "sellersprite_mcp",
+          "tool": "market_research_statistics",
+          "target": "sellersprite-mcp · market_research_statistics",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-market_seller_concentration",
+          "server": "sellersprite_mcp",
+          "tool": "market_seller_concentration",
+          "target": "sellersprite-mcp · market_seller_concentration",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-review",
+          "server": "sellersprite_mcp",
+          "tool": "review",
+          "target": "sellersprite-mcp · review",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sellersprite_mcp-traffic_source",
+          "server": "sellersprite_mcp",
+          "tool": "traffic_source",
+          "target": "sellersprite-mcp · traffic_source",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sif_mcp-market_get_keyword_history",
+          "server": "sif_mcp",
+          "tool": "market_get_keyword_history",
+          "target": "sif-mcp · market_get_keyword_history",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sif_mcp-ops_get_asin_traffic_trend",
+          "server": "sif_mcp",
+          "tool": "ops_get_asin_traffic_trend",
+          "target": "sif-mcp · ops_get_asin_traffic_trend",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-category_name_search",
+          "server": "sorftime_mcp",
+          "tool": "category_name_search",
+          "target": "sorftime-mcp · category_name_search",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-category_products",
+          "server": "sorftime_mcp",
+          "tool": "category_products",
+          "target": "sorftime-mcp · category_products",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-category_report",
+          "server": "sorftime_mcp",
+          "tool": "category_report",
+          "target": "sorftime-mcp · category_report",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-category_search_from_product_name",
+          "server": "sorftime_mcp",
+          "tool": "category_search_from_product_name",
+          "target": "sorftime-mcp · category_search_from_product_name",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-get_favorite_keyword_dict",
+          "server": "sorftime_mcp",
+          "tool": "get_favorite_keyword_dict",
+          "target": "sorftime-mcp · get_favorite_keyword_dict",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-product_content",
+          "server": "sorftime_mcp",
+          "tool": "product_content",
+          "target": "sorftime-mcp · product_content",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-product_detail",
+          "server": "sorftime_mcp",
+          "tool": "product_detail",
+          "target": "sorftime-mcp · product_detail",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-product_reviews",
+          "server": "sorftime_mcp",
+          "tool": "product_reviews",
+          "target": "sorftime-mcp · product_reviews",
+          "status": "pending"
+        },
+        {
+          "id": "tool-sorftime_mcp-product_search",
+          "server": "sorftime_mcp",
+          "tool": "product_search",
+          "target": "sorftime-mcp · product_search",
+          "status": "pending"
+        },
+        {
+          "id": "tool-display_files-display_files",
+          "server": "display_files",
+          "tool": "display_files",
+          "target": "display-files · display_files",
+          "status": "pending"
+        },
+        {
+          "id": "tool-write_validated_json-write_validated_json",
+          "server": "write_validated_json",
+          "tool": "write_validated_json",
+          "target": "write-validated-json · write_validated_json",
+          "status": "pending"
+        },
+        {
+          "id": "tool-luckee_main_agent-list_workspaces",
+          "server": "luckee_main_agent",
+          "tool": "list_workspaces",
+          "target": "luckee_main_agent · list_workspaces",
+          "status": "pending"
+        }
+      ]
+    }
   }
 }
