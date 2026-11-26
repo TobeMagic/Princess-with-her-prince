@@ -1330,5 +1330,58 @@
       "at": "2026-11-26T07:15:57.463Z"
     }
   ],
-  "judge_note": "轨迹摘要由外部 LLM-as-Judge 依据每条真实回复、工具轨迹与终态生成；模型网关额度受限时保留同口径结构化轨迹摘要，不评价业务效果。"
+  "judge_note": "轨迹摘要由外部 LLM-as-Judge 依据每条真实回复、工具轨迹与终态生成；模型网关额度受限时保留同口径结构化轨迹摘要，不评价业务效果。",
+  "mcp_scope": {
+    "server_count": 9,
+    "granularity": "mcpServers connections",
+    "unique_named_tools_seen": 33,
+    "by_server": {
+      "sellersprite_mcp": [
+        "asin_detail",
+        "asin_prediction",
+        "competitor_lookup",
+        "google_trend",
+        "keepa_info",
+        "keyword_research_trends",
+        "market_brand_concentration",
+        "market_ebc_distribution",
+        "market_listing_date_distribution",
+        "market_listing_trend_distribution",
+        "market_price_distribution",
+        "market_product_demand_trend",
+        "market_rating_distribution",
+        "market_ratings_count_distribution",
+        "market_research_statistics",
+        "market_seller_concentration",
+        "product_node",
+        "review",
+        "traffic_source"
+      ],
+      "sif_mcp": [
+        "market_get_keyword_history",
+        "ops_get_asin_traffic_trend"
+      ],
+      "sorftime_mcp": [
+        "category_name_search",
+        "category_products",
+        "category_report",
+        "category_search_from_product_name",
+        "get_favorite_keyword_dict",
+        "product_content",
+        "product_detail",
+        "product_reviews",
+        "product_search"
+      ],
+      "display_files": [
+        "display_files"
+      ],
+      "write_validated_json": [
+        "write_validated_json"
+      ],
+      "luckee_main_agent": [
+        "list_workspaces"
+      ]
+    },
+    "caveat": "A-2 covers one working tool per server; it does not enumerate or validate every tool exposed by each server. SIF and lingxing expose many tools."
+  }
 }
